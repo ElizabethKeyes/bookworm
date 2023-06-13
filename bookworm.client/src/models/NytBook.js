@@ -10,5 +10,6 @@ export class NytBook {
     this.title = data.title
     this.weeksOnList = data.week_on_list
     this.rankLastWeek = data.rank_last_week
+    this.bookImage = data.book_image
   }
 }
