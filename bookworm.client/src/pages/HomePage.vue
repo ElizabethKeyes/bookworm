@@ -42,11 +42,20 @@ export default {
 <style scoped lang="scss">
 .hardcoverFictionList {
   display: flex;
-  justify-content: center;
-  padding-left: 2em;
   white-space: nowrap;
   overflow-x: auto;
+}
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #35393ec2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c4c6;
+  border-radius: 10px;
 }
 
 .books {
