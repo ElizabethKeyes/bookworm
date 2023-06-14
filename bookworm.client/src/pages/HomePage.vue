@@ -3,9 +3,9 @@
     <section class="row justify-content-center">
       <div class="col-10">
         <h1 class="mt-2">Bestsellers - Hardcover Fiction</h1>
-        <div class="hardcoverFictionList">
+        <div class="hardcoverFictionList" v-if="hardcoverFictionList.length > 0">
           <div v-for="b in hardcoverFictionList[0].books" :key="b.title" class="books">
-            <img :src="b.bookImage" :alt="'a photo of ' + b.title">
+            <img :src="b.bookImage" :alt="'a photo of ' + b.title" class="book-image">
           </div>
         </div>
       </div>
@@ -62,5 +62,12 @@ export default {
   float: left;
   padding: 10px;
   white-space: normal;
+  height: 30vh;
+}
+
+.book-image {
+  object-fit: cover;
+  object-position: center;
+  height: 100%
 }
 </style>
